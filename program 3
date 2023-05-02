@@ -1,0 +1,26 @@
+#PROGRAM TO FIND MAX AND MIN NUMBERS IN LIST
+#method 1:
+n=int(input())
+l=list(map(int,input().split()))
+d={}
+for i in l:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+m=list(d.keys())
+print('max:',max(m))
+print('min:',min(m))
+
+#method 2:
+n=int(input())
+l=list(map(int,input().split()))
+print('max:',max(l))
+print('min:',min(l))
+
+output:
+==================================================================== RESTART: C:/Users/S ANUPAMA/least frequency.py ====================================================================
+5
+1 5 7 9 15
+max: 15
+min: 1
